@@ -146,19 +146,15 @@ cli.configurep(commands)
 ex.6: DHCP SERVER VIA PYTHON:
 #!/usr/bin/env python
 import cli
-
-commands = '''
-    ip dhcp pool VOICEVLAN
-    network 10.12.100.0 255.255.255.0
-    default-router 10.12.100.4
-    domain-name VOICEVLAN.COM
-    dns-server 10.12.1.10
-    option 150 ip 10.12.100.8
+cmd3 = '''
+    ip dhcp pool MINILINUX
+    network 192.168.102.0 255.255.255.0
+    default-router 192.168.102.11
+    domain-name MINILINUX.COM
+    dns-server 8.8.8.8
     END
 '''
-
-for c in commands:
-    cli.executep(c)
+cli.configurep(cmd3)
 
 ex7.
 
@@ -1038,4 +1034,5 @@ cisco1.json
   }
  ]
 }
+
 
