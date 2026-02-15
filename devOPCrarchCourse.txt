@@ -44,6 +44,7 @@ app-hosting appid guestshell
  app-resource profile custom 
    cpu 1500 
    memory 512
+   persist-disk 1000
 end
 
 UNANGTELNET enables DOCKERization on Cisco:  guestshell enable
@@ -1034,6 +1035,7 @@ cisco1.json
   }
  ]
 }
+
 
 
 
